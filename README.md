@@ -329,6 +329,7 @@ $categories = get_categories(array(
 	wp_get_attachment_image($attachment->ID, $size);
 
 5.2.12 Update image sizes
+
 	update_option( 'thumbnail_size_w', 0 );
 	update_option( 'thumbnail_size_h', 0 );
 	update_option( 'medium_size_w', 0 );
