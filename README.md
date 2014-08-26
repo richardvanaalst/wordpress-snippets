@@ -308,30 +308,30 @@ $categories = get_categories(array(
 
 5.2.10	Posts (featured) afbeelding
 
-if (has_post_thumbnail()) {
-	the_post_thumbnail($size, $attr);
+	if (has_post_thumbnail()) {
+		the_post_thumbnail($size, $attr);
 
-	// Set in wp-admin:
-	the_post_thumbnail('thumbnail');
-	the_post_thumbnail('medium');
-	the_post_thumbnail('large');
-	the_post_thumbnail('full');
-	the_post_thumbnail(160,90);
-}
+		// Set in wp-admin:
+		the_post_thumbnail('thumbnail');
+		the_post_thumbnail('medium');
+		the_post_thumbnail('large');
+		the_post_thumbnail('full');
+		the_post_thumbnail(160,90);
+	}
 
 5.2.11	Voeg afbeeldingsformaten toe
 
-add_image_size($name, $width, $height, $crop);
+	add_image_size($name, $width, $height, $crop);
 
 5.2.12	Attachments (afbeeldingen)
 
-$size = 'thumbnail', 'full', 'large', 'medium' of 'custom'.
-wp_get_attachment_image($attachment->ID, $size);
+	$size = 'thumbnail', 'full', 'large', 'medium' of 'custom'.
+	wp_get_attachment_image($attachment->ID, $size);
 
 5.2.12 Update image sizes
-update_option( 'thumbnail_size_w', 0 );
-update_option( 'thumbnail_size_h', 0 );
-update_option( 'medium_size_w', 0 );
-update_option( 'medium_size_h', 0 );
-update_option( 'large_size_w', 0 );
-update_option( 'large_size_h', 0 );
+	update_option( 'thumbnail_size_w', 0 );
+	update_option( 'thumbnail_size_h', 0 );
+	update_option( 'medium_size_w', 0 );
+	update_option( 'medium_size_h', 0 );
+	update_option( 'large_size_w', 0 );
+	update_option( 'large_size_h', 0 );
